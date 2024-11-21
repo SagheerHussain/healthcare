@@ -1,3 +1,5 @@
+/* eslint-disable n/handle-callback-err */
+
 "use client";
 
 import NextError from "next/error";
@@ -7,7 +9,6 @@ export default function GlobalError({
 }: {
   error: Error & { digest?: string };
 }) {
-
   return (
     <html>
       <body>
