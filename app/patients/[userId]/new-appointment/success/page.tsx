@@ -22,15 +22,18 @@ const RequestSuccess = async ({
   return (
     <div className=" flex h-screen max-h-screen px-[5%]">
       <div className="success-img">
-        <Link href="/">
-          <Image
-            src="/assets/icons/logo-full.svg"
-            height={1000}
-            width={1000}
-            alt="logo"
-            className="h-10 w-fit"
-          />
-        </Link>
+        <div className="brand_logo">
+          <Link href="/" className="cursor-pointer flex items-center">
+            <Image
+              src="/assets/icons/proxy_med_logo.png"
+              height={1000}
+              width={1000}
+              alt="logo"
+              className="h-20 w-fit mr-3"
+            />
+            <h5 className="text-3xl font-bold uppercase">Proxy Med</h5>
+          </Link>
+        </div>
 
         <section className="flex flex-col items-center">
           <Image
@@ -75,7 +78,7 @@ const RequestSuccess = async ({
           </Link>
         </Button>
 
-        <p className="copyright">© 2024 CarePluse</p>
+        <p className="copyright">© 2024 Proxy Med</p>
       </div>
     </div>
   );

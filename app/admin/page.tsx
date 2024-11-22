@@ -12,14 +12,15 @@ const AdminPage = async () => {
   return (
     <div className="mx-auto flex max-w-7xl flex-col space-y-14">
       <header className="admin-header">
-        <Link href="/" className="cursor-pointer">
+        <Link href="/" className="cursor-pointer flex items-center">
           <Image
-            src="/assets/icons/logo-full.svg"
-            height={32}
-            width={162}
+            src="/assets/icons/proxy_med_logo.png"
+            height={1000}
+            width={1000}
             alt="logo"
-            className="h-8 w-fit"
+            className="h-20 w-fit mr-3"
           />
+          <h5 className="text-3xl font-bold uppercase">Proxy Med</h5>
         </Link>
 
         <p className="text-16-semibold">Admin Dashboard</p>
